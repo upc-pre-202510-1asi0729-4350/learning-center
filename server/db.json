@@ -1,0 +1,17 @@
+{
+  "profiles": [],
+  "users": [],
+  "students": [],
+  "courses": [
+    {
+      "id": 1,
+      "title": "Angular Basics",
+      "description": "Learn the basics of Angular framework."
+    },
+    {
+      "title": "Angular Advanced",
+      "description": "Learn the tip and tricks of Angular framework.",
+      "id": 2
+    }
+  ]
+}
