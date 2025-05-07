@@ -1,13 +1,31 @@
 import {AfterViewInit, Component, inject, OnInit, ViewChild} from '@angular/core';
 import {Course} from '../../model/course.entity';
 import {MatPaginator} from '@angular/material/paginator';
-import {MatSort} from '@angular/material/sort';
-import {MatTableDataSource} from '@angular/material/table';
+import {MatSort, MatSortHeader} from '@angular/material/sort';
+import {
+  MatCell, MatCellDef,
+  MatColumnDef,
+  MatHeaderCell,
+  MatHeaderCellDef,
+  MatTable,
+  MatTableDataSource
+} from '@angular/material/table';
 import {CourseService} from '../../services/course.service';
+import {CourseCreateAndEditComponent} from '../../components/course-create-and-edit/course-create-and-edit.component';
 
 @Component({
   selector: 'app-course-management',
-  imports: [],
+  imports: [
+    CourseCreateAndEditComponent,
+    MatTable,
+    MatSort,
+    MatColumnDef,
+    MatHeaderCell,
+    MatSortHeader,
+    MatCell,
+    MatHeaderCellDef,
+    MatCellDef
+  ],
   templateUrl: './course-management.component.html',
   styleUrl: './course-management.component.css'
 })
@@ -49,6 +67,12 @@ export class CourseManagementComponent implements OnInit, AfterViewInit {
     this.getAllCourses();
   }
   protected onCourseAddRequested(item: Course) {
+    this.courseData = item;
+    this.updateCourse();
+    this.resetEditState();
+  }
+
+  protected onCourseUpdateRequested(item: Course) {
     this.courseData = item;
     this.updateCourse();
     this.resetEditState();
