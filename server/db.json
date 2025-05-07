@@ -12,6 +12,11 @@
       "title": "Angular Advanced",
       "description": "Learn the tip and tricks of Angular framework.",
       "id": 2
+    },
+    {
+      "id": 3,
+      "title": "Spring Boot Foundation",
+      "description": "Spring Boot Fundamentals"
     }
   ]
 }
