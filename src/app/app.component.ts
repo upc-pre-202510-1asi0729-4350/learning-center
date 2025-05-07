@@ -17,6 +17,7 @@ export class AppComponent {
   options = [
     { link: '/home', label: 'home'},
     { link: '/about', label: 'about'},
+    { link: '/learning/courses', label: 'courses'},
   ]
 
   constructor(private translate: TranslateService) {

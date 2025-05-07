@@ -13,6 +13,7 @@ import {
 import {CourseService} from '../../services/course.service';
 import {CourseCreateAndEditComponent} from '../../components/course-create-and-edit/course-create-and-edit.component';
 import {NgClass} from '@angular/common';
+import {MatIcon} from '@angular/material/icon';
 
 @Component({
   selector: 'app-course-management',
