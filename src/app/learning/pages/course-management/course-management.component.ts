@@ -76,7 +76,7 @@ export class CourseManagementComponent implements OnInit, AfterViewInit {
   }
   protected onCourseAddRequested(item: Course) {
     this.courseData = item;
-    this.updateCourse();
+    this.createCourse();
     this.resetEditState();
   }
 
