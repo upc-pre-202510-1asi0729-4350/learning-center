@@ -1,11 +1,19 @@
 import {Component, EventEmitter, Input, Output, ViewChild} from '@angular/core';
 import {BaseFormComponent} from '../../../shared/components/base-form.component';
 import {Course} from '../../model/course.entity';
-import {NgForm} from '@angular/forms';
+import {FormsModule, NgForm} from '@angular/forms';
+import {MatFormField, MatInput} from '@angular/material/input';
+import {MatButton} from '@angular/material/button';
 
 @Component({
   selector: 'app-course-create-and-edit',
-  imports: [],
+  imports: [
+    MatFormField,
+    FormsModule,
+    MatInput,
+    MatFormField,
+    MatButton
+  ],
   templateUrl: './course-create-and-edit.component.html',
   styleUrl: './course-create-and-edit.component.css'
 })
