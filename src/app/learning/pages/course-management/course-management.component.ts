@@ -6,12 +6,13 @@ import {
   MatCell, MatCellDef,
   MatColumnDef,
   MatHeaderCell,
-  MatHeaderCellDef,
+  MatHeaderCellDef, MatHeaderRow, MatRow, MatRowDef,
   MatTable,
   MatTableDataSource
 } from '@angular/material/table';
 import {CourseService} from '../../services/course.service';
 import {CourseCreateAndEditComponent} from '../../components/course-create-and-edit/course-create-and-edit.component';
+import {NgClass} from '@angular/common';
 
 @Component({
   selector: 'app-course-management',
@@ -24,7 +25,13 @@ import {CourseCreateAndEditComponent} from '../../components/course-create-and-e
     MatSortHeader,
     MatCell,
     MatHeaderCellDef,
-    MatCellDef
+    MatCellDef,
+    MatHeaderRow,
+    MatRowDef,
+    NgClass,
+    MatIcon,
+    MatPaginator,
+    MatRow
   ],
   templateUrl: './course-management.component.html',
   styleUrl: './course-management.component.css'
