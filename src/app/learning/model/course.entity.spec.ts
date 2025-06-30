@@ -1,7 +1,7 @@
-import { CourseEntity } from './course.entity';
+import {Course} from './course.entity';
 
 describe('CourseEntity', () => {
   it('should create an instance', () => {
-    expect(new CourseEntity()).toBeTruthy();
+    expect(new Course({})).toBeTruthy();
   });
 });

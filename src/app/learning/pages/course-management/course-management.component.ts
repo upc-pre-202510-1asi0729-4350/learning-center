@@ -3,10 +3,15 @@ import {Course} from '../../model/course.entity';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort, MatSortHeader} from '@angular/material/sort';
 import {
-  MatCell, MatCellDef,
+  MatCell,
+  MatCellDef,
   MatColumnDef,
   MatHeaderCell,
-  MatHeaderCellDef, MatHeaderRow, MatRow, MatRowDef,
+  MatHeaderCellDef,
+  MatHeaderRow,
+  MatHeaderRowDef,
+  MatRow,
+  MatRowDef,
   MatTable,
   MatTableDataSource
 } from '@angular/material/table';
@@ -32,7 +37,8 @@ import {MatIcon} from '@angular/material/icon';
     NgClass,
     MatIcon,
     MatPaginator,
-    MatRow
+    MatRow,
+    MatHeaderRowDef
   ],
   templateUrl: './course-management.component.html',
   styleUrl: './course-management.component.css'
